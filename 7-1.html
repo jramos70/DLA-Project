@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h3>Sacrifice Chosen!</h3>
+        <p>
+            You make your crew draws straws to see who gets sacrificed.
+            Jeff ends up picking the short straw and gets eaten alive (poor Jeff)!
+        </p>
+        <form id = "2" action="./8-1.html">
+            <input type="submit" value="continue" />
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+                var x = "#" + parseInt(Math.floor(Math.random() * 2 + 1));
+                if (x == "#2") {
+                    $(x).attr('action', './game-over-4.html');
+                }
+                
+        </script>
+    </body> 
+</html>
